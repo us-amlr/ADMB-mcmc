@@ -1,5 +1,5 @@
 # ADMB-mcmc
-Example MCMC using ADMB code and krill data from Kinzey et al., 2018
+Example MCMC using ADMB code and krill data from [Kinzey et al., 2018](https://doi.org/10.1371/journal.pone.0202545)
 
 This repository provides AD Model Builder (ADMB) code ('model/krill.tpl') and data ('model/krill.dat') for configuration XVI in Kinzey et al., 2018 ('KinzeyWattersReiss_2018.pdf' in this repository). It also contains an executable ('model/krill.exe') that was precompiled using ADMB version 12.3 (version 11.1 for the original paper) and then compiled with MinGW.
 
@@ -10,6 +10,8 @@ To obtain only the maximum likelihood estimates without the 'mceval.dat' file, u
 Figures 3c and 4c in Kinzey et al., 2018 illustrate the MCMC samples for numbers of recruits and spawning biomass, respectively ('mcmc_plot_Figs4c_3c.pdf' in the main directory). These can be reproduced from the 'mceval.dat' file using 'mcmc_plot_Figs4c_3c.r'.
 
 There are two diffences in the 'krill.tpl' in this repository and the 'ADMB-krill-spawner-recruit' repository that is also on the AMLR GitHub page. These are in how the 'RecTmp' variable in the case 3 portion of the SRecruit function, and how the survey likelihood (variable 'surv_like'), are defined. These differences suited the different objectives of the two papers.
+
+Manuscript citation: Kinzey D, Watters GM, Reiss CS (2018) Parameter estimation using randomized phases in an integrated assessment model for Antarctic krill. PLoS ONE 13(8): e0202545. https://doi.org/10.1371/journal.pone.0202545
 
 # Disclaimer
 
